@@ -1,0 +1,9 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: Create initial directory structure
+      sha: c568ffd6d9548baa2f8ceb52815923e1e9aea9a4
+    path: github.com/jenspinney/sample-dependency
+  path: config/_ytt_lib
+kind: LockConfig
