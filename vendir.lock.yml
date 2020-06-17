@@ -2,8 +2,8 @@ apiVersion: vendir.k14s.io/v1alpha1
 directories:
 - contents:
   - git:
-      commitTitle: Create initial directory structure
-      sha: c568ffd6d9548baa2f8ceb52815923e1e9aea9a4
+      commitTitle: Make images more interesting and hopefully work
+      sha: a45259ea12670ad8e16e1453556705c1fed5ede4
     path: github.com/jenspinney/sample-dependency
   path: config/_ytt_lib
 kind: LockConfig

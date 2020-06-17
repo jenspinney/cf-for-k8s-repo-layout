@@ -8,7 +8,7 @@ directories:
   - path: github.com/jenspinney/sample-dependency # <-- tells vendir to create this directory tree under config/_ytt_lib
     git:
       url: https://github.com/jenspinney/sample-dependency # <-- repo to clone into the path declared above
-      ref: c568ffd6d9548baa2f8ceb52815923e1e9aea9a4
+      ref: master
     includePaths: # <-- don't copy everything from the dependency's repo, just what's listed here
     - config/*
     - config/values/*

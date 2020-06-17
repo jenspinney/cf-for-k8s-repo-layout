@@ -1,0 +1,16 @@
+#@ load("@ytt:data", "data")
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-deployment
+spec:
+  template:
+    metadata:
+      labels:
+        app: sample-deployment
+    spec: #! pod spec
+      containers:
+      - name: #@ data.values.general.container_name
+        image: #@ data.values.image

@@ -1,0 +1,14 @@
+#@ load("@ytt:data", "data")
+#@ load("@ytt:library", "library")
+#@ load("@ytt:template", "template")
+#@ load("@ytt:yaml", "yaml")
+
+#@ def dependency_values():
+general:
+  container_name: #@ data.values.amazing.container
+image: awesome-image
+#@ end
+
+#@ dependency = library.get("github.com/jenspinney/sample-dependency")
+#@ dependency_resources = dependency.with_data_values(dependency_values()).eval()
+--- #@ template.replace(dependency_resources)
